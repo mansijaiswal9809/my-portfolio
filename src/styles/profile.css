@@ -1,0 +1,72 @@
+.headings {
+  animation: heading 0.5s ease-out 0.5s 1 forwards;
+  /* background-color: aliceblue; */
+}
+@keyframes heading {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 2px;
+  }
+}
+.heading {
+  animation: heading2 0.5s ease-in 0.7s 1 forwards; /* background-color: aliceblue; */
+}
+@keyframes heading2 {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 2px;
+  }
+}
+.head {
+  animation: head 1s ease-in  1 forwards;
+}
+@keyframes head{
+  0% {
+    transform: translateX(460px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.heading-bottom{
+animation: bottom 1s ease-in 0.7s infinite
+}
+
+@keyframes bottom {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.head:hover .headings{
+animation: skills 0.5s ease-in 1 forwards;
+}
+@keyframes skills {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.head:hover .skills{
+animation: opacit 0.3s ease-in 1 forwards;
+}
+@keyframes opacit {
+    0%{
+        opacity: 0;
+        /* background-color: aliceblue; */
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        /* background-color: black; */
+        transform: translateX(0);
+    }
+}
